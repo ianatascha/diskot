@@ -1,0 +1,365 @@
+
+/* IMPORT CSS (No :HAS)*/
+@import url('https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css');
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Full%20Role%20Pills');
+@import url("https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css");
+
+
+/* UI CLEANUP – REMOVE UNWANTED STUFF */
+/* Remove certain message actions for a cleaner UI */
+[aria-label*="Create Thread"], /* Hides thread creation button */
+[aria-label*="Mark Unread"], /* Hides "Mark as Unread" button */
+[aria-label*="Copy Link"], /* Hides the option to copy message link */
+[aria-label*="Pin Message"], /* Hides the pin message button */
+[aria-label*="Copy Message ID"],
+[aria-label*="Open Translate Modal"] { /* Hides message ID copy option */
+  display: none;
+}
+
+
+/* Snippets Remove / Hide unnecessary things */
+.addButtonIcon__29444,
+ .actionIcon_c69b6d,
+ invitesRefresh_f37cb1 .inviteButton_f37cb1,
+ .inviteButton_f37cb1,
+ .avatarPopover__2d0ab,
+ .app-launcher-entrypoint,
+ .wrapper_f563df,
+ .nowPlayingColumn__133bf {
+  display: none;
+ }
+
+
+/* Image Spoiler */
+:root {
+    --spoiler-blur-hover: 8px;
+
+}
+[class*="attachmentContainer_"][class*="spoilerContent_"] {
+    background-color: unset;
+    &[class*="hiddenSpoiler_"] {
+        > [class*="spoilerWarning_"] {
+            transition: opacity 50ms ease;
+        }
+        [class*="imageContent_"] {
+            filter: none !important;
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+                transition: filter 80ms ease-out;
+            }
+        }
+        &:hover {
+            > [class*="spoilerWarning_"] {
+                opacity: 0.2;
+            }
+            [class*="imageWrapper_"] > [class*="clickableWrapper_"] {
+                filter: blur(var(--spoiler-blur-hover));
+            }
+        }
+    }
+}
+
+
+/* Remove Reaction Right-Click Menu */
+[id^="message-quickreact-"] {
+  display: none !important;
+}
+#message>div>.wrapper_f563df {
+  display: none;
+}
+
+/* Remoove Activity Member List*/
+[class*='membersGroup']:has([role=button]), /* Hides member group with buttons */
+[class*='member'] [class*='container']:has([class*='badges']) { /* Hides member containers with badges */
+  display: none;
+}
+
+/* Fix Profile Bottom */
+.visual-refresh .focusLock__49fc1 .outer_c0bea0 .inner_c0bea0 {
+  padding: 36px 36px 36px 36px;
+}
+.profile__9c3be {
+    border-radius: var(--radius-lg);
+}
+
+/* Remove Quests on UserPanel */
+section[class^="panels_"]>div[class^="mask_"] {
+  display: none;
+}
+
+/* Fix Reduce Channel List Spacing */
+.link__2ea32 {
+    padding-block: 1.5px;
+}
+
+/* Compact Forum */
+/* pashtet_iv */
+.container__5b40b .link__2ea32 {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+}
+
+/* revert the input/output dropdowns user panel */
+[class*="buttons"] [role="switch"] {
+  border-radius: var(--radius-sm);
+  ~ button:not([aria-label="User Settings"]) {
+    display: none;
+  }
+}
+
+/* Hide typing dots in chat bar */
+[class*="ellipsis"] {
+  display: none !important;
+  & + span {
+    margin-left: 1px !important;
+  }
+}
+
+/* Server Tooltip */
+/* credit obsidianninja11 */
+.tooltip__4e35b,
+.tooltip__4e35b .listItemTooltipContent__91816 { 
+  max-width: unset !important; 
+}
+
+
+/* Plain Folder Icon Size Pastel */
+.expandedFolderIconWrapper__48112::after,
+.folderPreview__48112::after {
+  content: "";
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  top: 60px;
+  right: 12px;
+  position: absolute;
+  transition: opacity 0.2s ease;
+  transform: scale(1.2);
+}
+.folderPreview__48112:hover::after {
+  opacity: 0;
+}
+.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+  opacity: 0.5;
+  filter: blur(2.2px);
+  transition: opacity 0.2s ease, filter 0.2s ease !important;
+}
+.folderPreview__48112:hover > .folderPreviewGuildIcon__48112 {
+  opacity: 1;
+  filter: blur(0px);
+}
+.theme-dark .hiddenVisually_b18fe2[aria-expanded="false"] {
+  background-color: #000000;
+}
+
+
+/* Better Compact Context Menu */
+/* ===== MINI CONTEXT MENU ===== */
+[role="menu"] > [class*="scroller"] {
+  /* the higher the number, the greater the indentation from the edges of the menu */
+    margin: -7px;
+}
+
+[role="menuitem"] {
+    min-height: 24px !important; /* buttons size */
+    padding: 4px 8px !important; /* padding between buttons */
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+[role="menuitem"] [class*="iconContainer"] {
+    min-width: 20px;
+    margin-left: 5px;
+}
+
+/* icons */
+[role="menuitem"] svg,
+[role="menuitem"] img {
+    width: 20px;
+    height: 20px;
+}
+
+/* indents between separators */
+[role="menu"] [role="separator"] {
+    margin: 1px 6px !important;
+}
+
+
+/*   emoji part   */
+[role="menu"] [class*="f563df"][class*="wrapper"] {
+    display: none !important;
+}
+
+/* centralization of emoji */
+/* [class*="f563df"][class*="wrapper"] {
+    padding: 0 !important;
+    margin: 1px;
+} */
+/* [class*="f563df"][class*="button"] {
+    width: 0px;
+    height: 28px;
+    border-radius: 4px;
+} */
+/*  emojis size  */
+/* [class*="f563df"][class*="icon"] {
+    width: 16px;
+    height: 16px;
+} */
+
+
+/* Remove 3 emoji reactions */
+.hoverBarButton_f84418[aria-label^="Click to"],
+.separator_f84418 {
+  display: none;
+}
+
+
+/* Fix Voice by Moon */
+.voiceChannelHighlightContainer_c69b6d {
+    .voiceChannelHighlightBorder_c69b6d {
+        width: 4px !important;
+        border-radius: 8px;
+        inset-inline-start: 20px;
+        top: 34px;
+        bottom: 10px;
+        box-shadow: 0 0 12px color-mix(in srgb, var(--icon-feedback-positive) 50%, transparent 50%);
+        transition: box-shadow 0.3s;
+    }
+    &:hover .voiceChannelHighlightBorder_c69b6d {
+        box-shadow: 0 0 12px color-mix(in srgb, var(--icon-feedback-positive) 100%, transparent 0%);
+        transition: box-shadow 0.3s;
+    }
+    .voiceChannelHighlightGlow_c69b6d {
+        background: none;
+    }
+}
+
+
+/* SMALL PANEL By Obsidian*/
+.visual-refresh section.panels__5e434 {
+  left: calc(var(--custom-guild-list-width) + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+  box-sizing: border-box;
+
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+}
+nav.guilds__5e434 {
+  margin-bottom: 0 !important;
+}
+.sidebar__5e434:after {
+  display: none;
+}
+
+
+/* Icon Member Recolor */
+[class^=icon] path[d^="M14.5 8a3 3 0 1 0-2."] {
+    fill: var(--icon-muted) !important;
+}
+
+
+/* fix server boost tap */
+[class^=powerupContainer] {
+    display: flex;
+    > :not([class^=parentContainer]) { display: none; }
+}
+
+
+
+/* Remove annoying gaps between buttons (vc, text inputs, Emojis) */
+div[class^="buttons"] {
+  gap: 0!important;
+}
+
+/* rainbow Thread */
+ul[class^=content_] > li[class^=container_] > ul[role=group] {
+  
+  > div[class^=spineBorder_] {
+    --step: calc(var(--channels-name-line-height) + 10px);
+    background: var(--thread-spine, repeating-linear-gradient(
+      #d77891 calc(var(--step) * 0),
+      #d77891 calc(var(--step) * 1),
+      #eda27a calc(var(--step) * 1),
+      #eda27a calc(var(--step) * 2),
+      #deb783 calc(var(--step) * 2),
+      #deb783 calc(var(--step) * 3),
+      #8ec08a calc(var(--step) * 3),
+      #8ec08a calc(var(--step) * 4),
+      #7da3ef calc(var(--step) * 4),
+      #7da3ef calc(var(--step) * 5),
+      #b28dec calc(var(--step) * 5),
+      #b28dec calc(var(--step) * 6)
+    ));
+  }
+
+  > li:nth-of-type(6n + 1) {
+    --channels-default: var(--thread-default, rgba(215, 120, 145, 0.7));
+    --interactive-text-hover: var(--thread-default, #d77891);
+    --interactive-text-active: var(--thread-default, #d77891);
+    --text-strong: var(--thread-default, #d77891);
+    --text-default: var(--thread-core, #d77891);
+    --text-muted: var(--thread-muted, #d77891);
+    --spine-default: var(--thread-spine, #d77891);
+  }
+
+  > li:nth-of-type(6n + 2) {
+    --channels-default: var(--thread-default, rgba(237, 162, 122, 0.7));
+    --interactive-text-hover: var(--thread-default, #eda27a);
+    --interactive-text-active: var(--thread-default, #eda27a);
+    --text-strong: var(--thread-default, #eda27a);
+    --text-default: var(--thread-core, #eda27a);
+    --text-muted: var(--thread-muted, #eda27a);
+    --spine-default: var(--thread-spine, #eda27a);
+  }
+
+  > li:nth-of-type(6n + 3) {
+    --channels-default: var(--thread-default, rgba(222, 183, 131, 0.7));
+    --interactive-text-hover: var(--thread-default, #deb783);
+    --interactive-text-active: var(--thread-default, #deb783);
+    --text-strong: var(--thread-default, #deb783);
+    --text-default: var(--thread-core, #deb783);
+    --text-muted: var(--thread-muted, #deb783);
+    --spine-default: var(--thread-spine, #deb783);
+  }
+
+  > li:nth-of-type(6n + 4) {
+    --channels-default: var(--thread-default, rgba(142, 192, 138, 0.7));
+    --interactive-text-hover: var(--thread-default, #8ec08a);
+    --interactive-text-active: var(--thread-default, #8ec08a);
+    --text-strong: var(--thread-default, #8ec08a);
+    --text-default: var(--thread-core, #8ec08a);
+    --text-muted: var(--thread-muted, #8ec08a);
+    --spine-default: var(--thread-spine, #8ec08a);
+  }
+
+  > li:nth-of-type(6n + 5) {
+    --channels-default: var(--thread-default, rgba(125, 163, 239, 0.7));
+    --interactive-text-hover: var(--thread-default, #7da3ef);
+    --interactive-text-active: var(--thread-default, #7da3ef);
+    --text-strong: var(--thread-default, #7da3ef);
+    --text-default: var(--thread-core, #7da3ef);
+    --text-muted: var(--thread-muted, #7da3ef);
+    --spine-default: var(--thread-spine, #7da3ef);
+  }
+
+  > li:nth-of-type(6n + 6) {
+    --channels-default: var(--thread-default, rgba(178, 141, 236, 0.7));
+    --interactive-text-hover: var(--thread-default, #b28dec);
+    --interactive-text-active: var(--thread-default, #b28dec);
+    --text-strong: var(--thread-default, #b28dec);
+    --text-default: var(--thread-core, #b28dec);
+    --text-muted: var(--thread-muted, #b28dec);
+    --spine-default: var(--thread-spine, #b28dec);
+  }
+
+  li:only-of-type {
+    --channels-default: var(--thread-default, rgba(215, 120, 145, 0.7));
+    --interactive-text-hover: var(--thread-default, #d77891);
+    --interactive-text-active: var(--thread-default, #d77891);
+    --text-strong: var(--thread-default, #d77891);
+    --text-default: var(--thread-core, #d77891);
+    --text-muted: var(--thread-muted, #d77891);
+    --spine-default: var(--thread-spine, #d77891);
+  }
+}
