@@ -1,6 +1,6 @@
 # diskot
 for fun.
-theme from : Midnight Refac0r.
+theme from : Midnight Refact0r.
 mostly all the css/snippets doesnt belong to me.
 credits to the owner.
 
