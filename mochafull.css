@@ -207,19 +207,28 @@ body {
 }
 
 :root {
-/* Role Pill Settings */
+/* Porfile Role Pill Settings */
     --pill-roundness: 6px;
     --pill-opacity: 50%;
     --pill-border: true; /* "true" to enable */
 }
 
+:root {
+  /*---===< CHANNEL HIGHLIGHTER AND SPACER >===---*/
+  --chs-color-1: hsl(232deg, 97%, 85%);
+  --chs-color-2: var(--bg-4);
+  --chs-icon-hover: var(--bg-4);
+  --chs-icon-scale: 0.9;
+  --chs-channel-spacing: 0.8px;
+  --chs-channel-size: 1px;
+  --chs-channel-selected: linear-gradient(60deg, var(--chs-color-1) -300%, var(--chs-color-2));
+}
 
 /* RAW SNIPPS */
 /* Hover White */
 *:hover {
     color: #dcdcdc !important;
 }
-
 
 /* Remove the Line */
 .separator_c1e9c4 {
@@ -233,13 +242,8 @@ body {
     width: calc(100% - var(--space-md) - var(--space-md) + 9px);
 }
 
-/* Fix Panels */
-.panels__5e434  {
-    margin-left: 4px;
-}
 
-
-/* fix bg button color */
+/* fix bg button color Equicord (changelog) */
 .vc-btn-positive {
     background-color: var(--green-2);
 }
@@ -250,5 +254,6 @@ body {
 .vc-switch-checked .vc-switch-indicator {
     background: var(--accent-2);
 }
+
 
 
