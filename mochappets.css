@@ -31,7 +31,6 @@
 /* Image Spoiler */
 :root {
     --spoiler-blur-hover: 8px;
-
 }
 [class*="attachmentContainer_"][class*="spoilerContent_"] {
     background-color: unset;
@@ -145,14 +144,12 @@ padding-bottom: 0px !important;
   /* the higher the number, the greater the indentation from the edges of the menu */
     margin: -7px;
 }
-
 [role="menuitem"] {
     min-height: 24px !important; /* buttons size */
     padding: 4px 8px !important; /* padding between buttons */
     font-size: 14px;
     white-space: nowrap;
 }
-
 [role="menuitem"] [class*="iconContainer"] {
     min-width: 20px;
     margin-left: 5px;
@@ -169,7 +166,6 @@ padding-bottom: 0px !important;
 [role="menu"] [role="separator"] {
     margin: 1px 6px !important;
 }
-
 
 /*   emoji part   */
 [role="menu"] [class*="f563df"][class*="wrapper"] {
@@ -199,7 +195,6 @@ padding-bottom: 0px !important;
   display: none;
 }
 
-
 /* Fix Voice by Moon */
 .voiceChannelHighlightContainer_c69b6d {
     .voiceChannelHighlightBorder_c69b6d {
@@ -220,12 +215,10 @@ padding-bottom: 0px !important;
     }
 }
 
-
 /* Icon Member Recolor */
 [class^=icon] path[d^="M14.5 8a3 3 0 1 0-2."] {
     fill: var(--icon-muted) !important;
 }
-
 
 /* fix server boost tap */
 [class^=powerupContainer] {
@@ -233,12 +226,10 @@ padding-bottom: 0px !important;
     > :not([class^=parentContainer]) { display: none; }
 }
 
-
 /* Remove annoying gaps between buttons (vc, text inputs, Emojis) */
 div[class^="buttons"] {
   gap: 0!important;
 }
-
 
 /*---===< CHANNEL SELECTOR FADE AND HIGHLIGHTED ICONS by Soul >===---*/
 .containerDefault_c69b6d.selected_c69b6d .link__2ea32 {
@@ -246,7 +237,6 @@ div[class^="buttons"] {
   border-radius: 8px;
   margin-left: 5px;
 }
-
 .modeUnreadImportant__2ea32 .icon__2ea32,
 .containerDefault_c69b6d.selected_c69b6d .icon__2ea32,
 .containerDefault_c69b6d:hover .icon__2ea32 {
@@ -278,8 +268,6 @@ div[class^="buttons"] {
 .mainContent__29444[aria-expanded="false"] {
   opacity: 50% !important;
 }
-
-
 
 /* rainbow Thread */
 ul[class^=content_] > li[class^=container_] > ul[role=group] {
