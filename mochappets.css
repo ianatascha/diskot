@@ -2,8 +2,6 @@
 /* IMPORT CSS (No :HAS)*/
 @import url('https://davart154.github.io/Themes/Snippets/Mana%20Page%20Switcher/ManaPageSwitcherSource.css');
 @import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Full%20Role%20Pills');
-@import url("https://raw.githubusercontent.com/yiruzu/vencord-snippets/refs/heads/main/snippets/BubbleUsernames/import.css");
-
 
 /* UI CLEANUP – REMOVE UNWANTED STUFF */
 /* Remove certain message actions for a cleaner UI */
