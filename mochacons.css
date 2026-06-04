@@ -100,10 +100,10 @@
             content: url(https://i.ibb.co/VYvzbNBY/1353848371424792767.webp); /* Quest */
         }
         &[data-list-item-id*="create-join"] {
-            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke-linecap='round' stroke-width='4'%3E%3Crect width='24' height='24' x='12' y='12' fill='%23babbf1' stroke='%23babbf1' rx='4'/%3E%3Crect width='24' height='24' x='44' y='12' fill='%23626880' stroke='%23626880' rx='4'/%3E%3Crect width='24' height='24' x='12' y='44' fill='%23626880' stroke='%23626880' rx='4'/%3E%3Cpath stroke='%23babbf1' stroke-linejoin='round' d='M43.871 56h24.001M55.871 44v24'/%3E%3C/g%3E%3C/svg%3E"); /* Create Join */
+            content: url("https://img.icons8.com/color-pixels/32/add.png"); /* Create Join */
         }
         &[data-list-item-id*="guild-discover"] {
-            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 80 80'%3E%3Cg fill='none'%3E%3Cpath fill='%23626880' d='M29.393 14.393a27.717 27.717 0 1 1 21.214 51.214a27.717 27.717 0 0 1-21.214-51.214'/%3E%3Cpath fill='%23babbf1' fill-rule='evenodd' d='M29.058 56.13a42.15 42.15 0 0 1 6.93-43.551c2.66-.389 5.362-.39 8.021 0a42.15 42.15 0 0 1-.001 54.85a27.7 27.7 0 0 1-8.014 0a42.1 42.1 0 0 1-6.936-11.298m2.771-31.112A39.1 39.1 0 0 1 40 12.638a39.15 39.15 0 0 1 .003 54.728a39.15 39.15 0 0 1-8.172-42.347' clip-rule='evenodd'/%3E%3Cpath fill='%23babbf1' fill-rule='evenodd' d='M13.618 31.5a28 28 0 0 1 1.163-3h50.436a28 28 0 0 1 1.163 3zm.73 19a28 28 0 0 1-1.032-3h53.365a28 28 0 0 1-1.032 3z' clip-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E"); /* Discover */
+            content: url("https://img.icons8.com/color-pixels/32/earth-planet.png"); /* Discover */
         }
     }
 }
