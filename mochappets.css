@@ -72,14 +72,8 @@
 }
 
 /* Fix Bottom Profile */
-.inner_c0bea0 {
+.inner_c0bea0.profileContentInner__9c3be {
     padding-bottom: 48px;
-}
-.profile__9c3be {
-    border-radius: var(--radius-lg);
-}
-.user-profile-sidebar .inner_c0bea0 {
-    padding-bottom: 0 !important;
 }
 
 /* Remove Quests on UserPanel */
