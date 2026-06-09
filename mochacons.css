@@ -84,23 +84,23 @@
 /* Nested Discord Icons */
 /* set a background-image on add a server button */
 [data-list-item-id=guildsnav___create-join-button]
- { background-image: url("https://img.icons8.com/?size=64&id=69462&format=png");
+ { background-image: url("https://i.ibb.co/tp8xS2r7/ads.webp");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 90% 90%; /*adjust as you see fit*/
+   background-size: 80% 80%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 /* set a background-image on discovery button */
 [data-list-item-id=guildsnav___guild-discover-button]
- { background-image: url("https://img.icons8.com/?size=64&id=ISS3mb9Dz4do&format=png");
+ { background-image: url("https://i.ibb.co/d0mJCtQH/discover.webp");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 90% 90%; /*adjust as you see fit*/
+   background-size: 80% 80%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 /* set a background-image on Quest button */
 [data-list-item-id=guildsnav___undefined]
- { background-image: url("https://i.ibb.co/VYvzbNBY/1353848371424792767.webp");
+ { background-image: url("https://i.ibb.co/b5hLF2Ny/orbbs.webp");
    background-position: center;
    background-repeat: no-repeat;
    background-size: 90% 90%; /*adjust as you see fit*/
