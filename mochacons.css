@@ -82,31 +82,29 @@
 
 
 /* Nested Discord Icons */
-[data-list-item-id] {
-    &[data-list-item-id="guildsnav___home"] {
-        content: url(https://i.ibb.co/FqHV4W3Z/icons8-black-desert-96.png);
-    }
+/* set a background-image on add a server button */
+[data-list-item-id=guildsnav___create-join-button]
+ { background-image: url("https://img.icons8.com/?size=64&id=69462&format=png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 90% 90%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
 
-    &[data-list-item-id="guildsnav___undefined"],
-    &[data-list-item-id="guildsnav___create-join-button"],
-    &[data-list-item-id="guildsnav___guild-discover-button"] {
-        border-radius: 20px;
-        width: 80%;
-        height: 80%;
-        margin-top: 5px;
-        margin-left: 5px;
+/* set a background-image on discovery button */
+[data-list-item-id=guildsnav___guild-discover-button]
+ { background-image: url("https://img.icons8.com/?size=64&id=ISS3mb9Dz4do&format=png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 90% 90%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
 
-        &[data-list-item-id*="undefined"] {
-            content: url(https://i.ibb.co/VYvzbNBY/1353848371424792767.webp); /* Quest */
-        }
-        &[data-list-item-id*="create-join"] {
-            content: url("https://img.icons8.com/color-pixels/32/add.png"); /* Create Join */
-        }
-        &[data-list-item-id*="guild-discover"] {
-            content: url("https://img.icons8.com/color-pixels/32/earth-planet.png"); /* Discover */
-        }
-    }
-}
+/* set a background-image on Quest button */
+[data-list-item-id=guildsnav___undefined]
+ { background-image: url("https://i.ibb.co/VYvzbNBY/1353848371424792767.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 90% 90%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
 
 
 /* hide everything except the Friends tab in the DMs area */
