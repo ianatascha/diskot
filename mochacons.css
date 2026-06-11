@@ -107,6 +107,41 @@
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 
+/* set a background-image on dm button */
+[data-list-item-id^=private-channels-uid_][data-list-item-id$=___friends] 
+ { background-image: url("https://cdn3.emoji.gg/emojis/528345-bee.png");
+   background-position: 8px;
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+   svg { opacity: 0; }} /*remove discord logo from top leaving only background*/
+
+   /* set a background-image on nitro button */
+[data-list-item-id^=private-channels-uid_][data-list-item-id$=___nitro] 
+ { background-image: url("https://cdn3.emoji.gg/emojis/618492-diamond.png");
+   background-position: 8px;
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+   svg { opacity: 0; }} /*remove nitro logo from top leaving only background*/
+
+
+/* set a background-image on shop button */
+[data-list-item-id^=private-channels-uid_][data-list-item-id$=___shop] 
+ { background-image: url("https://cdn3.emoji.gg/emojis/532883-cash.png");
+   background-position: 8px;
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+   svg { opacity: 0; }} /*remove shop logo from top leaving only background*/
+
+
+/* set a background-image on message button */
+[data-list-item-id^=private-channels-uid_][data-list-item-id$=___messageRequests] 
+ { background-image: url("https://cdn3.emoji.gg/emojis/775959-wilted-flower.png");
+   background-position: 8px;
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+   svg { opacity: 0; }} /*remove message logo from top leaving only background*/
+
+
 /* hide everything except the Friends tab in the DMs area */
 [href="/quest-home"] {
   display: none !important;
