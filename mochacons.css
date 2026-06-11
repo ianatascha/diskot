@@ -84,18 +84,18 @@
 /* Nested Discord Icons */
 /* set a background-image on add a server button */
 [data-list-item-id=guildsnav___create-join-button]
- { background-image: url("https://cdn.discordapp.com/attachments/1495572970075324496/1514495582981459988/ppdzjnd.png?ex=6a2b936c&is=6a2a41ec&hm=c6ab07f92baf7f8012510e5d1ae1dbe20ba591580f24d7e5b93b561bd3656840&");
+ { background-image: url("https://cdn.discordapp.com/attachments/1495572970075324496/1514536987347128390/0jf4szm.png?ex=6a2bb9fc&is=6a2a687c&hm=cb336a134516aca4063e5877f1df18e943144a4113804d8f8fe2e904ff449ad5&");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 90% 90%; /*adjust as you see fit*/
+   background-size: 50% 50%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 /* set a background-image on discovery button */
 [data-list-item-id=guildsnav___guild-discover-button]
- { background-image: url("https://cdn.discordapp.com/attachments/1495572970075324496/1514495582540922971/vtv8wdj.png?ex=6a2b936c&is=6a2a41ec&hm=114347726585bd07212e8292e4e1b5d9b2d60e778a8c289476a2ac8c20088282&");
+ { background-image: url("https://discord.com/assets/2f0ebe181e1cce00.svg");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 90% 90%; /*adjust as you see fit*/
+   background-size: 50% 50%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 /* set a background-image on Quest button */
@@ -109,7 +109,7 @@
 
 /* set a background-image on dm button */
 [data-list-item-id^=private-channels-uid_][data-list-item-id$=___friends] 
- { background-image: url("https://cdn3.emoji.gg/emojis/528345-bee.png");
+ { background-image: url("https://discord.com/assets/d804200b134c9327.svg");
    background-position: 8px;
    background-repeat: no-repeat;
    background-size: 20px 20px;
