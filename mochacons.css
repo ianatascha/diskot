@@ -107,39 +107,63 @@
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 
-/* set a background-image on dm button */
-[data-list-item-id^=private-channels-uid_][data-list-item-id$=___friends] 
- { background-image: url("https://discord.com/assets/d804200b134c9327.svg");
-   background-position: 8px;
-   background-repeat: no-repeat;
-   background-size: 20px 20px;
-   svg { opacity: 0; }} /*remove discord logo from top leaving only background*/
+/* Friends Icon */
+[href="/channels/@me"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn3.emoji.gg/emojis/422848-bunny.png") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
 
-   /* set a background-image on nitro button */
-[data-list-item-id^=private-channels-uid_][data-list-item-id$=___nitro] 
- { background-image: url("https://cdn3.emoji.gg/emojis/618492-diamond.png");
-   background-position: 8px;
-   background-repeat: no-repeat;
-   background-size: 20px 20px;
-   svg { opacity: 0; }} /*remove nitro logo from top leaving only background*/
+/* nitro */
+[href="/store"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn.discordapp.com/assets/content/a0a455fb897b41612b171199b4be5f70d02e411e37643a5337c12497d46033a1.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* Shop */
+[href="/shop"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn3.emoji.gg/emojis/532883-cash.png") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* message */
+[href="/message-requests"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn3.emoji.gg/emojis/775959-wilted-flower.png") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
 
 
-/* set a background-image on shop button */
-[data-list-item-id^=private-channels-uid_][data-list-item-id$=___shop] 
- { background-image: url("https://cdn3.emoji.gg/emojis/532883-cash.png");
-   background-position: 8px;
-   background-repeat: no-repeat;
-   background-size: 20px 20px;
-   svg { opacity: 0; }} /*remove shop logo from top leaving only background*/
-
-
-/* set a background-image on message button */
-[data-list-item-id^=private-channels-uid_][data-list-item-id$=___messageRequests] 
- { background-image: url("https://cdn3.emoji.gg/emojis/775959-wilted-flower.png");
-   background-position: 8px;
-   background-repeat: no-repeat;
-   background-size: 20px 20px;
-   svg { opacity: 0; }} /*remove message logo from top leaving only background*/
 
 
 /* hide everything except the Friends tab in the DMs area */
