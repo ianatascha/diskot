@@ -158,12 +158,6 @@ padding-bottom: 0px !important;
     margin-left: 5px;
 }
 
-/* icons */
-[role="menuitem"] svg,
-[role="menuitem"] img {
-    width: 20px;
-    height: 20px;
-}
 
 /* indents between separators */
 [role="menu"] [role="separator"] {
