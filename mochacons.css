@@ -84,7 +84,7 @@
 /* Nested Discord Icons */
 /* set a background-image on add a server button */
 [data-list-item-id=guildsnav___create-join-button]
- { background-image: url("https://cdn.discordapp.com/attachments/1495572970075324496/1514536987347128390/0jf4szm.png?ex=6a2bb9fc&is=6a2a687c&hm=cb336a134516aca4063e5877f1df18e943144a4113804d8f8fe2e904ff449ad5&");
+ { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23f5bde6' stroke-width='.84' d='M7.986 1.42a.96.96 0 0 0-.851.51L5.704 4.577a.98.98 0 0 1-.658.498l-2.856.601c-.733.155-1.032 1.115-.526 1.69l1.972 2.238c.192.217.284.512.251.806l-.334 3.02c-.086.775.696 1.37 1.377 1.044l2.65-1.265a.94.94 0 0 1 .812 0l2.65 1.265c.68.325 1.462-.269 1.376-1.044l-.334-3.02a1.04 1.04 0 0 1 .251-.806l1.972-2.239c.506-.574.207-1.534-.526-1.689l-2.856-.6a.98.98 0 0 1-.658-.5L8.837 1.93a.96.96 0 0 0-.851-.51'/%3E%3Cpath fill='none' stroke='%23f5bde6' stroke-linecap='round' stroke-linejoin='round' d='M8.685 9.262a.75.754 0 0 1-.705.496a.75.754 0 0 1-.704-.496M10.5 8'/%3E%3C/svg%3E");
    background-position: center;
    background-repeat: no-repeat;
    background-size: 50% 50%; /*adjust as you see fit*/
@@ -92,7 +92,7 @@
 
 /* set a background-image on discovery button */
 [data-list-item-id=guildsnav___guild-discover-button]
- { background-image: url("https://discord.com/assets/2f0ebe181e1cce00.svg");
+ { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='%237dc4e4' d='M4.5 13.5L3.05 8.42m-.06-3.86a2 2 0 1 0 .06 3.86L4.5 13.5'/%3E%3Cpath stroke='%23ed8796' d='m2.5 6.5l3.88-2.82A2 2 0 1 1 10 2.3'/%3E%3Cpath stroke='%238aadf4' d='M14.3 8.33a2 2 0 1 0-2.43-3L8.01 2.5'/%3E%3Cpath stroke='%23a6da95' d='M10.06 14.89a2 2 0 1 0 2-3.3L13.5 6.5'/%3E%3Cpath stroke='%23c6a0f6' d='M11.5 13.5h-5a2 2 0 1 1-3.73-1'/%3E%3Cpath stroke='%23c6a0f6' d='M12 13.5a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5'/%3E%3Cpath stroke='%237dc4e4' d='M5 13.5a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5'/%3E%3Cpath stroke='%23ed8796' d='M3 6.5a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5'/%3E%3Cpath stroke='%238aadf4' d='M8.5 2.5A.5.5 0 0 1 8 3a.5.5 0 0 1-.5-.5A.5.5 0 0 1 8 2a.5.5 0 0 1 .5.5'/%3E%3Cpath stroke='%23a6da95' d='M14 6.5a.5.5 0 0 1-.5.5a.5.5 0 0 1-.5-.5a.5.5 0 0 1 .5-.5a.5.5 0 0 1 .5.5'/%3E%3C/g%3E%3C/svg%3E");
    background-position: center;
    background-repeat: no-repeat;
    background-size: 50% 50%; /*adjust as you see fit*/
