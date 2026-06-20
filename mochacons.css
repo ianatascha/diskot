@@ -143,7 +143,7 @@
  { background-image: url("https://cdn.discordapp.com/emojis/1353848371424792767.webp?size=80&animated=true");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 70% 70%; /*adjust as you see fit*/
+   background-size: 75% 75%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 
