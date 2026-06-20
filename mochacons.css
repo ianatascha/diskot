@@ -28,7 +28,7 @@
     font-weight: bold !important;
     width: 14px !important;
     height: 14px !important;
-    transition: color 0.3s ease, text-shadow 0.7s ease, transform 0.7s ease-in-out, filter 0.7s ease !important;
+    transition: color 0.3s ease, text-shadow 0.5s ease, transform 0.5s ease-in-out, filter 0.5s ease !important;
     position: absolute !important;
     transform: translate(-50%, -50%) !important;
 }
@@ -37,7 +37,7 @@
 .winButtonClose_c38106::before {
     content: "✖" !important;
     color: #f38ba8 !important; /* Red color */
-    top: 53% !important;
+    top: 58% !important;
     font-size: 18px !important;
     left: 50% !important;
     font-weight: normal !important; /* Fixed weight */
@@ -118,17 +118,16 @@
     .visual-refresh .winButtons_c38106 {
         gap: 0 !important;
     }
-}}
-
+}
 
 
 /* Nested Discord Icons */
 /* set a background-image on add a server button */
 [data-list-item-id=guildsnav___create-join-button]
- { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='%23ed8796' d='M2.5 14.5a24.3 24.3 0 0 1 1.63-4.36c.21-.42.45-.84.7-1.26c2.75-4.61 6.63-6.8 8.67-7.38c-.8 3.52-3.91 10.46-10.15 10.4'/%3E%3Cpath stroke='%23f5a97f' d='M6.14 6.96C8.7 3.64 11.76 1.99 13.5 1.5a18.5 18.5 0 0 1-2.27 5.46'/%3E%3Cpath stroke='%23ed8796' d='M6.5 9.5h-2m1.25-2h2.71'/%3E%3C/g%3E%3C/svg%3E");
+ { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23c6a0f6' stroke-linecap='round' stroke-linejoin='round' d='M10.5 8v1c0 .67.4 1.21.97 1.55c.58.34 1.53.34 2.1 0c.58-.34.94-.95.93-1.62V8a6.5 6.5 0 1 0-2.79 5.33M10.5 8a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0'/%3E%3C/svg%3E");
     background-position: center;
    background-repeat: no-repeat; 
-  background-size: 50% 50%; /*adjust as you see fit*/
+  background-size: 60% 60%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 /* set a background-image on discovery button */
@@ -136,7 +135,7 @@
  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke='%238aadf4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 8A6.5 6.5 0 0 1 8 14.5A6.5 6.5 0 0 1 1.5 8A6.5 6.5 0 0 1 8 1.5A6.5 6.5 0 0 1 14.5 8'/%3E%3Cpath d='M8 1.5c1.67 2 2.5 4.17 2.5 6.5s-.83 4.5-2.5 6.5m0-13A9.96 9.96 0 0 0 5.5 8c0 2.33.83 4.5 2.5 6.5m-5.5-4h11m-11-5h11'/%3E%3C/g%3E%3C/svg%3E");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 50% 50%; /*adjust as you see fit*/
+   background-size: 60% 60%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 /* set a background-image on Quest button */
@@ -144,7 +143,7 @@
  { background-image: url("https://cdn.discordapp.com/emojis/1353848371424792767.webp?size=80&animated=true");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 90% 90%; /*adjust as you see fit*/
+   background-size: 70% 70%; /*adjust as you see fit*/
    svg { display: none; }} /*remove logo from top leaving only background*/
 
 
