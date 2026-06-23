@@ -212,11 +212,6 @@ padding-bottom: 0px !important;
     }
 }
 
-/* Icon Member Recolor */
-[class^=icon] path[d^="M14.5 8a3 3 0 1 0-2."] {
-    fill: var(--icon-muted) !important;
-}
-
 /* fix server boost tap */
 [class^=powerupContainer] {
     display: flex;
