@@ -124,7 +124,7 @@
 /* Nested Discord Icons */
 /* set a background-image on add a server button */
 [data-list-item-id=guildsnav___create-join-button]
- { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23c6a0f6' stroke-linecap='round' stroke-linejoin='round' d='M10.5 8v1c0 .67.4 1.21.97 1.55c.58.34 1.53.34 2.1 0c.58-.34.94-.95.93-1.62V8a6.5 6.5 0 1 0-2.79 5.33M10.5 8a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0'/%3E%3C/svg%3E");
+ { background-image: url("https://i.ibb.co/ds9GgvGd/d278c96a71d6ec04af6b198efb11275ac54be24bef5b67a75695b2567a363429.png");
     background-position: center;
    background-repeat: no-repeat; 
   background-size: 60% 60%; /*adjust as you see fit*/
@@ -132,7 +132,7 @@
 
 /* set a background-image on discovery button */
 [data-list-item-id=guildsnav___guild-discover-button]
- { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke='%238aadf4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 8A6.5 6.5 0 0 1 8 14.5A6.5 6.5 0 0 1 1.5 8A6.5 6.5 0 0 1 8 1.5A6.5 6.5 0 0 1 14.5 8'/%3E%3Cpath d='M8 1.5c1.67 2 2.5 4.17 2.5 6.5s-.83 4.5-2.5 6.5m0-13A9.96 9.96 0 0 0 5.5 8c0 2.33.83 4.5 2.5 6.5m-5.5-4h11m-11-5h11'/%3E%3C/g%3E%3C/svg%3E");
+ { background-image: url("https://i.ibb.co/8DXBkks9/6e70583f62076de571b4c685039e27d14da9b47e551438605d587dde35aab6cf.png");
    background-position: center;
    background-repeat: no-repeat;
    background-size: 60% 60%; /*adjust as you see fit*/
@@ -140,7 +140,7 @@
 
 /* set a background-image on Quest button */
 [data-list-item-id=guildsnav___undefined]
- { background-image: url("https://cdn.discordapp.com/emojis/1353848371424792767.webp?size=80&animated=true");
+ { background-image: url("https://i.ibb.co/ns8vmXgZ/48241d280e4d6ca0c82bc6b14806f4d1933d322e0392fd7837ed283e3fc58039.png");
    background-position: center;
    background-repeat: no-repeat;
    background-size: 75% 75%; /*adjust as you see fit*/
@@ -181,7 +181,7 @@
     display: none;
   }
   &:before {
-    background: url("https://cdn3.emoji.gg/emojis/532883-cash.png") center/18px no-repeat;
+    background: url("https://i.ibb.co/YBZB73CL/b06c62560301d7b255136d1adb4f9e55d8f69d5b331089d9dd0dee7e49b4914e.png") center/18px no-repeat;
     content: "";
     height: 20px;
     margin-inline-end: 12px;
