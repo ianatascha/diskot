@@ -124,7 +124,7 @@
 /* Nested Discord Icons */
 /* set a background-image on add a server button */
 [data-list-item-id=guildsnav___create-join-button]
- { background-image: url("https://i.ibb.co/ds9GgvGd/d278c96a71d6ec04af6b198efb11275ac54be24bef5b67a75695b2567a363429.png");
+ { background-image: url("https://cdn.discordapp.com/assets/content/d278c96a71d6ec04af6b198efb11275ac54be24bef5b67a75695b2567a363429.svg");
     background-position: center;
    background-repeat: no-repeat; 
   background-size: 60% 60%; /*adjust as you see fit*/
@@ -132,7 +132,7 @@
 
 /* set a background-image on discovery button */
 [data-list-item-id=guildsnav___guild-discover-button]
- { background-image: url("https://i.ibb.co/8DXBkks9/6e70583f62076de571b4c685039e27d14da9b47e551438605d587dde35aab6cf.png");
+ { background-image: url("https://cdn.discordapp.com/assets/content/980843c1ec098b50a01495e7cadccf3e6980327febcadade4caa8f849f9779c4.svg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: 60% 60%; /*adjust as you see fit*/
@@ -140,7 +140,7 @@
 
 /* set a background-image on Quest button */
 [data-list-item-id=guildsnav___undefined]
- { background-image: url("https://i.ibb.co/ns8vmXgZ/48241d280e4d6ca0c82bc6b14806f4d1933d322e0392fd7837ed283e3fc58039.png");
+ { background-image: url("https://cdn.discordapp.com/assets/content/48241d280e4d6ca0c82bc6b14806f4d1933d322e0392fd7837ed283e3fc58039.svg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: 75% 75%; /*adjust as you see fit*/
@@ -181,7 +181,7 @@
     display: none;
   }
   &:before {
-    background: url("https://i.ibb.co/YBZB73CL/b06c62560301d7b255136d1adb4f9e55d8f69d5b331089d9dd0dee7e49b4914e.png") center/18px no-repeat;
+    background: url("https://cdn.discordapp.com/assets/content/b06c62560301d7b255136d1adb4f9e55d8f69d5b331089d9dd0dee7e49b4914e.svg") center/18px no-repeat;
     content: "";
     height: 20px;
     margin-inline-end: 12px;
