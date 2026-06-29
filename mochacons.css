@@ -194,7 +194,7 @@
     display: none;
   }
   &:before {
-    background: url("https://cdn3.emoji.gg/emojis/775959-wilted-flower.png") center/18px no-repeat;
+    background: url("https://discord.com/assets/d804200b134c9327.svg") center/18px no-repeat;
     content: "";
     height: 20px;
     margin-inline-end: 12px;
