@@ -1,0 +1,326 @@
+/* Window Control Fancy Button By Moonself + squeezbtw */
+/* new windows button & hover */
+.winButton_c38106 {
+    position: relative !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.winButtons_c38106 {
+    gap: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.winButton_c38106 svg {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+.winButton_c38106::before {
+    content: "" !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: bold !important;
+    width: 14px !important;
+    height: 14px !important;
+    transition: color 0.3s ease, text-shadow 0.5s ease, transform 0.5s ease-in-out, filter 0.5s ease !important;
+    position: absolute !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+
+.winButtonClose_c38106::before {
+    content: "🗙" !important;
+    color: #f38ba8 !important; /* Red color */
+    top: 50% !important;
+    font-size: 13px !important;
+    left: 50% !important;
+    font-weight: normal !important; /* Fixed weight */
+    text-shadow: 0 0 3px #f38ba8 !important; /* Light outline for stability */
+    will-change: transform !important; /* Optimization for animation */
+    transform: translate(-50%, -50%) !important;
+}
+
+.winButtonClose_c38106:hover::before {
+    color: #d20f39 !important; /* Brighter red on hover */
+    text-shadow: 
+    0 0 5px #ff3b44cc,
+    0 0 10px #ff3b4499,
+    0 0 15px #ff3b4480,
+    0 0 20px #ff3b4466,
+    0 0 25px #ff3b444d,
+    0 0 30px #ff3b4433 !important;
+    filter: brightness(1.1) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important; /* Rotation animation */
+}
+
+.winButtonMinMax_c38106:nth-child(1)::before {
+    content: "—" !important;
+    color: #f9e2af !important; /* Yellow color */
+    top: 55% !important;
+    font-size: 12px !important;
+    left: 50% !important;
+    -webkit-text-stroke: 0.5px #f9e2af !important; /* Fix outline */
+    text-rendering: geometricPrecision !important;
+    will-change: transform !important; /* Optimization for animation */
+    text-shadow: 0 0 3px #f9e2af !important; /* Light outline for stability */
+}
+
+.winButtonMinMax_c38106:nth-child(1):hover::before {
+    color: #df8e1d !important;
+    text-shadow: 
+        0 0 5px #faa61a,
+        0 0 10px #b3760f,
+        0 0 15px #c98105,
+        0 0 20px #b17307,
+        0 0 25px #996606b6,
+        0 0 30px #9663059a !important;
+    filter: brightness(1.2) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important;
+}
+
+.winButtonMinMax_c38106:nth-child(2)::before {
+    content: "◻" !important;
+    color: #a6e3a1 !important; /* Green color */
+    top: 50% !important;
+    font-size: 14px !important;
+    left: 50% !important;
+    -webkit-text-stroke: 0.5px #a6e3a1 !important; /* Fix outline */
+    text-rendering: geometricPrecision !important;
+    will-change: transform !important; /* Optimization for animation */
+    text-shadow: 0 0 3px #a6e3a1 !important; /* Light outline for stability */
+}
+
+.winButtonMinMax_c38106:nth-child(2):hover::before {
+    color: #40a02b !important;
+    text-shadow: 
+        0 0 5px #2ecc71cc,
+        0 0 10px #2ecc7199,
+        0 0 15px #2ecc7180,
+        0 0 20px #2ecc7166,
+        0 0 25px #2ecc714d,
+        0 0 30px #2ecc7133 !important;
+    filter: brightness(1.2) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important;
+}
+
+@container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
+    .visual-refresh .winButton_c38106 {
+        border-radius: 0 !important;
+    }
+    
+    .visual-refresh .winButtons_c38106 {
+        gap: 0 !important;
+    }
+}
+
+
+/* Nested Discord Icons */
+/* set a background-image on add a server button */
+[data-list-item-id=guildsnav___create-join-button]
+ { background-image: url("https://cdn.discordapp.com/assets/content/d278c96a71d6ec04af6b198efb11275ac54be24bef5b67a75695b2567a363429.svg");
+    background-position: center;
+   background-repeat: no-repeat; 
+  background-size: 60% 60%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
+
+/* set a background-image on discovery button */
+[data-list-item-id=guildsnav___guild-discover-button]
+ { background-image: url("https://cdn.discordapp.com/assets/content/980843c1ec098b50a01495e7cadccf3e6980327febcadade4caa8f849f9779c4.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 60% 60%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
+
+/* set a background-image on Quest button */
+[data-list-item-id=guildsnav___undefined]
+ { background-image: url("https://cdn.discordapp.com/assets/content/48241d280e4d6ca0c82bc6b14806f4d1933d322e0392fd7837ed283e3fc58039.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 75% 75%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
+
+
+/* Friends Icon */
+[href="/channels/@me"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://discord.com/assets/d804200b134c9327.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* nitro */
+[href="/store"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn.discordapp.com/assets/content/a0a455fb897b41612b171199b4be5f70d02e411e37643a5337c12497d46033a1.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* Shop */
+[href="/shop"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn.discordapp.com/assets/content/b06c62560301d7b255136d1adb4f9e55d8f69d5b331089d9dd0dee7e49b4914e.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* message */
+[href="/message-requests"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn3.emoji.gg/emojis/775959-wilted-flower.png") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23a6da95' stroke-linecap='round' stroke-linejoin='round' d='M4.389 10.167h7.222v2.889a1.444 1.444 0 0 1-1.444 1.444H5.833a1.444 1.444 0 0 1-1.444-1.444ZM8 5.833A4.333 4.333 0 0 0 3.667 1.5H1.5v1.444a4.333 4.333 0 0 0 4.333 4.334H8m0 0a4.333 4.333 0 0 1 4.333-4.334H14.5v.723A4.333 4.333 0 0 1 10.167 8H8m0 2.167V5.833'/%3E%3C/svg%3E");
+  transform: translate(-100%, -110%);
+}
+.iconContainer_c00127 {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23a6da95' stroke-linecap='round' stroke-linejoin='round' d='M4.389 10.167h7.222v2.889a1.444 1.444 0 0 1-1.444 1.444H5.833a1.444 1.444 0 0 1-1.444-1.444ZM8 5.833A4.333 4.333 0 0 0 3.667 1.5H1.5v1.444a4.333 4.333 0 0 0 4.333 4.334H8m0 0a4.333 4.333 0 0 1 4.333-4.334H14.5v.723A4.333 4.333 0 0 1 10.167 8H8m0 2.167V5.833'/%3E%3C/svg%3E");
+  display: inline-block;
+}
+
+
+/* Change ICON */
+/* Inbox S*/
+path[d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5h-2.65c-.5 0-.85.5-.85 1a3 3 0 1 1-6 0c0-.5-.35-1-.85-1H5.5A1.5 1.5 0 0 1 4 11.5v-6Z"] {
+    d: path("M10.25 6A2.25 2.25 0 0 0 8 8.25v1.23c0 1.176.716 2.233 1.807 2.67l3.893 1.557c.332.133.55.455.55.812v1.231A.25.25 0 0 1 14 16h-3.75a.25.25 0 0 1-.25-.25v-.312a1 1 0 1 0-2 0v.312A2.25 2.25 0 0 0 10.25 18H14a2.25 2.25 0 0 0 2.25-2.25v-1.23a2.875 2.875 0 0 0-1.807-2.67l-3.893-1.557a.875.875 0 0 1-.55-.812V8.25a.25.25 0 0 1 .25-.25H14a.25.25 0 0 1 .25.25v.313a1 1 0 1 0 2 0V8.25A2.25 2.25 0 0 0 14 6z");
+    transform: translate(-2px, -5px) scale(1.5);
+    fill: #f5c2e7;
+}
+
+/* Help C*/
+path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"] {
+    d: path("M10.5 6A3.5 3.5 0 0 0 7 9.5v5a3.5 3.5 0 0 0 3.5 3.5h2.813a3.19 3.19 0 0 0 3.187-3.187V14.5a1 1 0 1 0-2 0v.313c0 .655-.532 1.187-1.187 1.187H10.5A1.5 1.5 0 0 1 9 14.5v-5A1.5 1.5 0 0 1 10.5 8h2.813c.655 0 1.187.532 1.187 1.188V9.5a1 1 0 1 0 2 0v-.312A3.19 3.19 0 0 0 13.313 6z");
+    transform: translate(-2px, -5px) scale(1.5);
+    fill: #fab387;
+}
+
+/* Dev Tools H*/
+path[d="M2 20.59V19.4a1 1 0 0 1 .3-.7l2.4-2.42a1 1 0 0 1 .71-.29H6l9-9-.85-.85a1 1 0 0 1-.23-.34l-1.49-3.73a.5.5 0 0 1 .65-.65l3.73 1.5a1 1 0 0 1 .34.22l.64.64a1 1 0 0 1 1.42 0l1 1a1 1 0 0 1 0 1.42l1.58 1.58a1 1 0 0 1 0 1.42l-1.58 1.58a1 1 0 0 1-1.42 0L17 9l-9 9v.59a1 1 0 0 1-.3.7l-2.4 2.42a1 1 0 0 1-.71.29H3.4a1 1 0 0 1-.7-.3l-.42-.4a1 1 0 0 1-.29-.71Z"] {
+    d: path("M9 6a1 1 0 0 0-1 1v10a1 1 0 1 0 2 0v-4h4.25v4a1 1 0 1 0 2 0V7a1 1 0 1 0-2 0v4H10V7a1 1 0 0 0-1-1");
+    transform: translate(-5px, -5px) scale(1.5);
+    fill: #f9e2af;
+}
+path[d="M8.23 10.23c.2.2.51.2.7 0l1.3-1.3a.5.5 0 0 0 0-.7L6.5 4.5l.3-.3a1 1 0 0 0 0-1.4l-.5-.5c-.2-.2-.45-.3-.7-.22-.43.14-1.17.49-2.1 1.42a5.37 5.37 0 0 0-1.42 2.1c-.08.25.03.5.21.7l.5.5a1 1 0 0 0 1.42 0l.29-.3 3.73 3.73ZM13.77 15.06a.5.5 0 0 0 0 .7l1.73 1.74 1.44 2.4a1 1 0 0 0 .15.19l1.73 1.73c.1.1.26.1.36 0l2.64-2.64c.1-.1.1-.26 0-.36L20.1 17.1a1 1 0 0 0-.2-.15L17.5 15.5l-1.73-1.73a.5.5 0 0 0-.7 0l-1.3 1.3Z"] {
+    d: path("");
+}
+
+/* Equicord A*/
+path[d="M221.5.6C99.2.6,0,99.7,0,222.1s99.2,221.5,221.5,221.5,221.5-99.2,221.5-221.5S343.8.6,221.5.6ZM221.5,363.3c-78.3,0-141.8-63.5-141.8-141.8s63.5-141.8,141.8-141.8,141.8,63.5,141.8,141.8-63.5,141.8-141.8,141.8Z"] {
+    d: path("M11.75 6a1 1 0 0 0-.936.649l-3.75 10a1 1 0 1 0 1.872.702l1.007-2.684h3.614l1.007 2.684a1 1 0 0 0 1.872-.702l-3.75-10A1 1 0 0 0 11.75 6m0 3.848l1.057 2.819h-2.114z");
+    transform: translate(-180px, -90px) scale(28);
+    fill: #a6e3a1;
+}
+path[d="M438.3,175C421,90.1,354.7,23.1,269.9,5.1,145-21.3,33.1,57.6,6.2,169.5c-3.4,14.1,4.6,28.5,18.4,33.1l2.7.9c24.7,8.2,51.8-4.7,60.4-29.3,19.4-55.6,72.5-95.4,134.9-95,44.3.3,84.1,21.2,109.9,53.7l-63.3,29.5c-7.9-7-17.5-12.5-28.5-15.7-35.6-10.3-73.8,7.7-88.5,41.7-17.2,39.8,3.3,85.4,43.9,99.4,37.9,13,79.7-6.9,93.5-44.5,2.6-7.2,4.1-14.5,4.4-21.8l66-30.8c1.8,8.2,2.9,16.6,3.2,25.2,1.2,34-9.6,65.5-28.5,90.5-17.8,23.6-10.5,57.4,15.7,71.1l1.3.7c10.4,5.5,23.3,3.4,31.4-5.2,46.8-49.9,70.8-121.4,55.2-198Z"] {
+    display: none;
+}
+path[d="M172.8,152.7h0c17.7,0,32,14.3,32,32v148h-64v-148c0-17.7,14.3-32,32-32Z"] {
+    display: none;
+}
+
+
+/* Arrow Left */
+path[d="M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L5.42 9H11a7 7 0 0 1 7 7v4a1 1 0 1 0 2 0v-4a9 9 0 0 0-9-9H5.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z"] {
+    d: path("M19.164 19.547c-1.641-2.5-3.669-3.285-6.164-3.484V17.5c0 .534-.208 1.036-.586 1.414c-.756.756-2.077.751-2.823.005l-6.293-6.207a1 1 0 0 1 0-1.425l6.288-6.203c.754-.755 2.073-.756 2.829.001c.377.378.585.88.585 1.414v1.704c4.619.933 8 4.997 8 9.796v1a.999.999 0 0 1-1.836.548m-7.141-5.536c2.207.056 4.638.394 6.758 2.121a7.985 7.985 0 0 0-6.893-6.08C11.384 9.996 11 10 11 10V6.503l-5.576 5.496l5.576 5.5V14z");
+    transform: translate(-1px, -2px) scale(1.1);
+    fill: #85c1dc;
+}
+/* Arrow right */
+path[d="M21.7 7.3a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.4-1.4L18.58 9H13a7 7 0 0 0-7 7v4a1 1 0 1 1-2 0v-4a9 9 0 0 1 9-9h5.59l-3.3-3.3a1 1 0 0 1 1.42-1.4l5 5Z"] {
+    d: path("M4 19.999q-.144 0-.286-.042A1 1 0 0 1 3 18.999v-1a9.98 9.98 0 0 1 8-9.796V6.499c0-.534.208-1.036.585-1.414c.756-.757 2.075-.756 2.829-.001l6.288 6.203a.996.996 0 0 1 0 1.424l-6.293 6.207c-.746.746-2.067.751-2.823-.005A2 2 0 0 1 11 17.499v-1.437c-2.495.201-4.523.985-6.164 3.484a1 1 0 0 1-.836.453m8-5.989l1-.01v3.499l5.576-5.5L13 6.503V10s-.384-.004-.891.052a7.98 7.98 0 0 0-6.892 6.08C7.338 14.404 9.768 14.066 12 14.01");
+  transform: translate(-1px, -2px) scale(1.1);
+  fill: #81c8be;
+}
+/* edit */
+path[d="m13.96 5.46 4.58 4.58a1 1 0 0 0 1.42 0l1.38-1.38a2 2 0 0 0 0-2.82l-3.18-3.18a2 2 0 0 0-2.82 0l-1.38 1.38a1 1 0 0 0 0 1.42ZM2.11 20.16l.73-4.22a3 3 0 0 1 .83-1.61l7.87-7.87a1 1 0 0 1 1.42 0l4.58 4.58a1 1 0 0 1 0 1.42l-7.87 7.87a3 3 0 0 1-1.6.83l-4.23.73a1.5 1.5 0 0 1-1.73-1.73Z"] {
+    d: path("M21 6.879L17.121 3A1.497 1.497 0 0 0 15 3L4.061 13.939c-.293.293-.558.727-.75 1.188C3.119 15.59 3 16.086 3 16.5V21h4.5c.414 0 .908-.119 1.371-.311s.896-.457 1.189-.75L21 9a1.497 1.497 0 0 0 0-2.121M5.768 15.061l8.293-8.293L15.293 8L7 16.293zM7.5 19H6l-1-1v-1.5c0-.077.033-.305.158-.605c.01-.02 2.967 2.938 2.967 2.938c-.322.134-.548.167-.625.167m1.439-.768L7.707 17L16 8.707l1.232 1.232zm9-9L14.767 6.06l1.293-1.293l3.17 3.172z");
+    fill: #f4b8e4;
+}
+/* Smile */
+path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22ZM6.5 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-9.8 1.17a1 1 0 0 1 1.39.27 3.5 3.5 0 0 0 5.82 0 1 1 0 0 1 1.66 1.12 5.5 5.5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z"] {
+    d: path("M10.05 2.19a.75.75 0 0 0 .29 1.472a8.7 8.7 0 0 1 3.32 0a.75.75 0 0 0 .29-1.472a10.3 10.3 0 0 0-3.9 0M7.277 4.931a.75.75 0 0 0-.835-1.246a10 10 0 0 0-2.758 2.758a.75.75 0 1 0 1.246.835A8.6 8.6 0 0 1 7.278 4.93m10.279-1.246a.75.75 0 0 0-.835 1.246a8.6 8.6 0 0 1 2.347 2.347a.75.75 0 1 0 1.246-.835a10 10 0 0 0-2.758-2.758m4.253 6.364a.75.75 0 0 0-1.472.291a8.7 8.7 0 0 1 0 3.32a.75.75 0 0 0 1.472.29c.25-1.262.25-2.638 0-3.9m-18.148.291a.75.75 0 0 0-1.472-.29a10.3 10.3 0 0 0 0 3.9a.75.75 0 1 0 1.472-.29a8.7 8.7 0 0 1 0-3.32m1.27 6.382a.75.75 0 0 0-1.247.835a10 10 0 0 0 2.758 2.758a.75.75 0 1 0 .835-1.246a8.6 8.6 0 0 1-2.347-2.347m15.383.835a.75.75 0 1 0-1.246-.835a8.6 8.6 0 0 1-2.347 2.347a.75.75 0 1 0 .835 1.246a10 10 0 0 0 2.758-2.758m-9.975 2.781a.75.75 0 0 0-.29 1.472c1.262.25 2.638.25 3.9 0a.75.75 0 1 0-.29-1.472a8.7 8.7 0 0 1-3.32 0M9.5 11a1 1 0 1 0 0-2a1 1 0 0 0 0 2m6-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-6.177 4.255a.75.75 0 1 0-1.146.968A4.99 4.99 0 0 0 12 17a5 5 0 0 0 3.823-1.777a.75.75 0 0 0-1.147-.968A3.5 3.5 0 0 1 12 15.5a3.5 3.5 0 0 1-2.677-1.245");
+    transform: translate(-1px, -2px) scale(1.1);
+    fill: #e5c890;     
+}
+/* translater */
+path[d="m475 976 181-480h82l186 480h-87l-41-126H604l-47 126h-82Zm151-196h142l-70-194h-2l-70 194Zm-466 76-55-55 204-204q-38-44-67.5-88.5T190 416h87q17 33 37.5 62.5T361 539q45-47 75-97.5T487 336H40v-80h280v-80h80v80h280v80H567q-22 69-58.5 135.5T419 598l98 99-30 81-127-122-200 200Z"] {
+    d: path("M14.022 7h1a1 1 0 0 1 1 1v1a1 1 0 0 0 2 0V8a3.003 3.003 0 0 0-3-3h-1a1 1 0 0 0 0 2m-4 9h-1a1 1 0 0 1-1-1v-1a1 1 0 0 0-2 0v1a3.003 3.003 0 0 0 3 3h1a1 1 0 0 0 0-2m11-1a1 1 0 0 0 0-2h-3v-.5a1 1 0 0 0-2 0v.5h-3a1 1 0 0 0 0 2h5.184a6.7 6.7 0 0 1-1.225 2.527a6.7 6.7 0 0 1-.63-.983a1 1 0 1 0-1.779.912a8.7 8.7 0 0 0 .96 1.468a6.6 6.6 0 0 1-2.426 1.099a1 1 0 0 0 .427 1.954a8.6 8.6 0 0 0 3.445-1.622a8.7 8.7 0 0 0 3.469 1.622a1 1 0 1 0 .43-1.954a6.7 6.7 0 0 1-2.446-1.09A8.74 8.74 0 0 0 20.244 15Zm-11.97-3.757a1 1 0 0 0 1.94-.486l-1.757-7.03a2.281 2.281 0 0 0-4.426 0l-1.757 7.03a1 1 0 0 0 1.94.486L5.552 9h2.94ZM6.052 7l.698-2.787a.291.291 0 0 1 .544 0L7.991 7Z");
+    transform: translate(1px, 100px) scale(40);
+    fill: #eebebe;
+}
+
+/* Server owner crown */
+path[d="M5 18a1 1 0 0 0-1 1 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 1 1 0 0 0-1-1H5ZM3.04 7.76a1 1 0 0 0-1.52 1.15l2.25 6.42a1 1 0 0 0 .94.67h14.55a1 1 0 0 0 .95-.71l1.94-6.45a1 1 0 0 0-1.55-1.1l-4.11 3-3.55-5.33.82-.82a.83.83 0 0 0 0-1.18l-1.17-1.17a.83.83 0 0 0-1.18 0l-1.17 1.17a.83.83 0 0 0 0 1.18l.82.82-3.61 5.42-4.41-3.07Z"] {
+    d: path("M1 7C0 1 8 1 7 7M1 6q-2-3 0-5q0 2 2 3m2 0q2-1 2-3q2 2 0 5");
+    transform: scale(2.8);
+}
+
+/* nitro */
+path[d="M11.47 6.55a.75.75 0 0 1 1.06 0l2.2 2.14c.14.14.23.34.23.55v5.52c0 .21-.09.4-.23.55l-2.2 2.14a.75.75 0 0 1-1.06 0l-2.2-2.14a.77.77 0 0 1-.23-.55V9.24c0-.21.09-.41.23-.55l2.2-2.14Z"]{
+   d: path("M13.849 4.22c-.684-1.626-3.014-1.626-3.698 0L8.397 8.387l-4.552.361c-1.775.14-2.495 2.331-1.142 3.477l3.468 2.937l-1.06 4.392c-.413 1.713 1.472 3.067 2.992 2.149L12 19.35l3.897 2.354c1.52.918 3.405-.436 2.992-2.15l-1.06-4.39l3.468-2.938c1.353-1.146.633-3.336-1.142-3.477l-4.552-.36z");
+    transform: scale(1);
+}
+path[d="M10.95 1.43a1.5 1.5 0 0 1 2.1 0l5.49 5.33c.3.29.46.68.46 1.1v8.44c-.04.35-.2.69-.46.94l-5.49 5.33-.11.1a1.5 1.5 0 0 1-2-.1l-5.48-5.33c-.3-.29-.46-.68-.46-1.1V7.86c0-.42.17-.81.46-1.1l5.49-5.33ZM7.29 7.76c-.2.2-.3.46-.3.73v7.02c0 .27.1.54.3.73l4 3.9a1 1 0 0 0 1.41 0l4-3.9c.2-.2.31-.46.31-.73V8.49c0-.27-.1-.54-.3-.73l-4-3.9a1 1 0 0 0-1.41 0l-4 3.9Z"]{
+    display: none;
+}
+/* Hide User Profile */
+path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]{
+   fill: var(--icon-muted);
+}
+path[d="M24 19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"]{
+   fill: var(--icon-muted);
+}
+
+/* Search */
+path[d="M15.62 17.03a9 9 0 1 1 1.41-1.41l4.68 4.67a1 1 0 0 1-1.42 1.42l-4.67-4.68ZM17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"] {
+   fill: var(--icon-muted);
+}
+
+/* Arrow Small (2)*/
+path[d="M9.3 5.3a1 1 0 0 0 0 1.4l5.29 5.3-5.3 5.3a1 1 0 1 0 1.42 1.4l6-6a1 1 0 0 0 0-1.4l-6-6a1 1 0 0 0-1.42 0Z"] {
+    d: path("m19.164 12l-6.207-6.207l-1.414 1.414L16.336 12l-4.793 4.793l1.414 1.414zm-5.65 0L7.307 5.793L5.893 7.207L10.686 12l-4.793 4.793l1.414 1.414z");
+    transform: translate(-1px, -2px) scale(1.1);
+}
+
+/* Arrow Small (2)*/
+path[d="M14.7 5.3a1 1 0 0 1 0 1.4L9.42 12l5.3 5.3a1 1 0 0 1-1.42 1.4l-6-6a1 1 0 0 1 0-1.4l6-6a1 1 0 0 1 1.42 0Z"] {
+      d: path("m4.836 12l6.207 6.207l1.414-1.414L7.664 12l4.793-4.793l-1.414-1.414zm5.65 0l6.207 6.207l1.414-1.414L13.314 12l4.793-4.793l-1.414-1.414z");
+    transform: translate(-1px, -2px) scale(1.1);
+}
+
+
+
