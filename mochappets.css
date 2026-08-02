@@ -58,12 +58,7 @@
 
 
 /* Remove Reaction Right-Click Menu */
-[id^="message-quickreact-"] {
-  display: none !important;
-}
-#message>div>.wrapper_f563df {
-  display: none;
-}
+.menu_c1e9c4[id="message"]>.scroller_c1e9c4>.wrapper_f563df{display:none;}
 
 /* Remoove Activity Member List*/
 [class*='membersGroup']:has([role=button]), /* Hides member group with buttons */
