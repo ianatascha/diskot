@@ -97,14 +97,6 @@ padding-bottom: 0px !important;
   }
 }
 
-/* Hide typing dots in chat bar */
-[class*="ellipsis"] {
-  display: none !important;
-  & + span {
-    margin-left: 1px !important;
-  }
-}
-
 
 /* Plain Folder Icon Size Pastel */
 .expandedFolderIconWrapper__48112::after,
