@@ -1,0 +1,285 @@
+/* Window Control Fancy Button By Moonself + squeezbtw */
+/* new windows button & hover */
+.winButton_c38106 {
+    position: relative !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.winButtons_c38106 {
+    gap: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.winButton_c38106 svg {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+.winButton_c38106::before {
+    content: "" !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: bold !important;
+    width: 14px !important;
+    height: 14px !important;
+    transition: color 0.3s ease, text-shadow 0.5s ease, transform 0.5s ease-in-out, filter 0.5s ease !important;
+    position: absolute !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+
+.winButtonClose_c38106::before {
+    content: "🗙" !important;
+    color: #f38ba8 !important; /* Red color */
+    top: 50% !important;
+    font-size: 13px !important;
+    left: 50% !important;
+    font-weight: normal !important; /* Fixed weight */
+    text-shadow: 0 0 3px #f38ba8 !important; /* Light outline for stability */
+    will-change: transform !important; /* Optimization for animation */
+    transform: translate(-50%, -50%) !important;
+}
+
+.winButtonClose_c38106:hover::before {
+    color: #d20f39 !important; /* Brighter red on hover */
+    text-shadow: 
+    0 0 5px #ff3b44cc,
+    0 0 10px #ff3b4499,
+    0 0 15px #ff3b4480,
+    0 0 20px #ff3b4466,
+    0 0 25px #ff3b444d,
+    0 0 30px #ff3b4433 !important;
+    filter: brightness(1.1) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important; /* Rotation animation */
+}
+
+.winButtonMinMax_c38106:nth-child(1)::before {
+    content: "—" !important;
+    color: #f9e2af !important; /* Yellow color */
+    top: 55% !important;
+    font-size: 12px !important;
+    left: 50% !important;
+    -webkit-text-stroke: 0.5px #f9e2af !important; /* Fix outline */
+    text-rendering: geometricPrecision !important;
+    will-change: transform !important; /* Optimization for animation */
+    text-shadow: 0 0 3px #f9e2af !important; /* Light outline for stability */
+}
+
+.winButtonMinMax_c38106:nth-child(1):hover::before {
+    color: #df8e1d !important;
+    text-shadow: 
+        0 0 5px #faa61a,
+        0 0 10px #b3760f,
+        0 0 15px #c98105,
+        0 0 20px #b17307,
+        0 0 25px #996606b6,
+        0 0 30px #9663059a !important;
+    filter: brightness(1.2) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important;
+}
+
+.winButtonMinMax_c38106:nth-child(2)::before {
+    content: "◻" !important;
+    color: #a6e3a1 !important; /* Green color */
+    top: 50% !important;
+    font-size: 14px !important;
+    left: 50% !important;
+    -webkit-text-stroke: 0.5px #a6e3a1 !important; /* Fix outline */
+    text-rendering: geometricPrecision !important;
+    will-change: transform !important; /* Optimization for animation */
+    text-shadow: 0 0 3px #a6e3a1 !important; /* Light outline for stability */
+}
+
+.winButtonMinMax_c38106:nth-child(2):hover::before {
+    color: #40a02b !important;
+    text-shadow: 
+        0 0 5px #2ecc71cc,
+        0 0 10px #2ecc7199,
+        0 0 15px #2ecc7180,
+        0 0 20px #2ecc7166,
+        0 0 25px #2ecc714d,
+        0 0 30px #2ecc7133 !important;
+    filter: brightness(1.2) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important;
+}
+
+@container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
+    .visual-refresh .winButton_c38106 {
+        border-radius: 0 !important;
+    }
+    
+    .visual-refresh .winButtons_c38106 {
+        gap: 0 !important;
+    }
+}
+
+
+/* Nested Discord Icons */
+/* set a background-image on add a server button */
+[data-list-item-id=guildsnav___create-join-button]
+ { background-image: url("https://cdn.discordapp.com/assets/content/d278c96a71d6ec04af6b198efb11275ac54be24bef5b67a75695b2567a363429.svg");
+    background-position: center;
+   background-repeat: no-repeat; 
+  background-size: 60% 60%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
+
+/* set a background-image on discovery button */
+[data-list-item-id=guildsnav___guild-discover-button]
+ { background-image: url("https://cdn.discordapp.com/assets/content/980843c1ec098b50a01495e7cadccf3e6980327febcadade4caa8f849f9779c4.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 60% 60%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
+
+/* set a background-image on Quest button */
+[data-list-item-id=guildsnav___undefined]
+ { background-image: url("https://cdn.discordapp.com/assets/content/48241d280e4d6ca0c82bc6b14806f4d1933d322e0392fd7837ed283e3fc58039.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 75% 75%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove logo from top leaving only background*/
+
+
+/* Friends Icon */
+[href="/channels/@me"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://discord.com/assets/d804200b134c9327.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* nitro */
+[href="/store"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn.discordapp.com/assets/content/a0a455fb897b41612b171199b4be5f70d02e411e37643a5337c12497d46033a1.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* Shop */
+[href="/shop"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn.discordapp.com/assets/content/b06c62560301d7b255136d1adb4f9e55d8f69d5b331089d9dd0dee7e49b4914e.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* message */
+[href="/message-requests"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://discord.com/assets/4900b53e7b34c3a5.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+/* quest */
+[href="/quest-home"] .layout__20a53 {
+  .avatar__20a53 {
+    display: none;
+  }
+  &:before {
+    background: url("https://cdn.discordapp.com/assets/content/48241d280e4d6ca0c82bc6b14806f4d1933d322e0392fd7837ed283e3fc58039.svg") center/18px no-repeat;
+    content: "";
+    height: 20px;
+    margin-inline-end: 12px;
+    width: 20px;
+  }
+}
+
+
+
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23a6da95' stroke-linecap='round' stroke-linejoin='round' d='M4.389 10.167h7.222v2.889a1.444 1.444 0 0 1-1.444 1.444H5.833a1.444 1.444 0 0 1-1.444-1.444ZM8 5.833A4.333 4.333 0 0 0 3.667 1.5H1.5v1.444a4.333 4.333 0 0 0 4.333 4.334H8m0 0a4.333 4.333 0 0 1 4.333-4.334H14.5v.723A4.333 4.333 0 0 1 10.167 8H8m0 2.167V5.833'/%3E%3C/svg%3E");
+  transform: translate(-100%, -110%);
+}
+.iconContainer_c00127 {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23a6da95' stroke-linecap='round' stroke-linejoin='round' d='M4.389 10.167h7.222v2.889a1.444 1.444 0 0 1-1.444 1.444H5.833a1.444 1.444 0 0 1-1.444-1.444ZM8 5.833A4.333 4.333 0 0 0 3.667 1.5H1.5v1.444a4.333 4.333 0 0 0 4.333 4.334H8m0 0a4.333 4.333 0 0 1 4.333-4.334H14.5v.723A4.333 4.333 0 0 1 10.167 8H8m0 2.167V5.833'/%3E%3C/svg%3E");
+  display: inline-block;
+}
+
+
+
+
+/* Arrow Left */
+path[d="M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L5.42 9H11a7 7 0 0 1 7 7v4a1 1 0 1 0 2 0v-4a9 9 0 0 0-9-9H5.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z"] {
+    d: path("M19.164 19.547c-1.641-2.5-3.669-3.285-6.164-3.484V17.5c0 .534-.208 1.036-.586 1.414c-.756.756-2.077.751-2.823.005l-6.293-6.207a1 1 0 0 1 0-1.425l6.288-6.203c.754-.755 2.073-.756 2.829.001c.377.378.585.88.585 1.414v1.704c4.619.933 8 4.997 8 9.796v1a.999.999 0 0 1-1.836.548m-7.141-5.536c2.207.056 4.638.394 6.758 2.121a7.985 7.985 0 0 0-6.893-6.08C11.384 9.996 11 10 11 10V6.503l-5.576 5.496l5.576 5.5V14z");
+    transform: translate(-1px, -2px) scale(1.1);
+}
+/* Arrow right */
+path[d="M21.7 7.3a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.4-1.4L18.58 9H13a7 7 0 0 0-7 7v4a1 1 0 1 1-2 0v-4a9 9 0 0 1 9-9h5.59l-3.3-3.3a1 1 0 0 1 1.42-1.4l5 5Z"] {
+    d: path("M4 19.999q-.144 0-.286-.042A1 1 0 0 1 3 18.999v-1a9.98 9.98 0 0 1 8-9.796V6.499c0-.534.208-1.036.585-1.414c.756-.757 2.075-.756 2.829-.001l6.288 6.203a.996.996 0 0 1 0 1.424l-6.293 6.207c-.746.746-2.067.751-2.823-.005A2 2 0 0 1 11 17.499v-1.437c-2.495.201-4.523.985-6.164 3.484a1 1 0 0 1-.836.453m8-5.989l1-.01v3.499l5.576-5.5L13 6.503V10s-.384-.004-.891.052a7.98 7.98 0 0 0-6.892 6.08C7.338 14.404 9.768 14.066 12 14.01");
+  transform: translate(-1px, -2px) scale(1.1);
+}
+
+/* Smile */
+path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22ZM6.5 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-9.8 1.17a1 1 0 0 1 1.39.27 3.5 3.5 0 0 0 5.82 0 1 1 0 0 1 1.66 1.12 5.5 5.5 0 0 1-9.14 0 1 1 0 0 1 .27-1.4Z"] {
+    d: path("M1.5 2.09c.9.91 2.37 1.64 4.19 2.16A9.92 9.92 0 0 1 12 2c2.39 0 4.59.84 6.31 2.25C20.13 3.73 21.6 3 22.5 2.09c-.03 1.63-.85 3.12-2.22 4.31A9.9 9.9 0 0 1 22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12c0-2.08.63-4 1.72-5.6C2.35 5.21 1.53 3.72 1.5 2.09M20 12a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8a8 8 0 0 0 8-8m-9.5-2c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V8.5zm6 0c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5l3-1.5zM12 17.23c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81");
+    transform: translate(-1px, 0px) scale(1);    
+}
+
+/* Hide User Profile */
+path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]{
+   fill: var(--icon-muted);
+}
+path[d="M24 19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"]{
+   fill: var(--icon-muted);
+}
+
+/* Search */
+path[d="M15.62 17.03a9 9 0 1 1 1.41-1.41l4.68 4.67a1 1 0 0 1-1.42 1.42l-4.67-4.68ZM17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"] {
+   fill: var(--icon-muted);
+}
+
+/* Arrow Small (2)*/
+path[d="M9.3 5.3a1 1 0 0 0 0 1.4l5.29 5.3-5.3 5.3a1 1 0 1 0 1.42 1.4l6-6a1 1 0 0 0 0-1.4l-6-6a1 1 0 0 0-1.42 0Z"] {
+    d: path("m19.164 12l-6.207-6.207l-1.414 1.414L16.336 12l-4.793 4.793l1.414 1.414zm-5.65 0L7.307 5.793L5.893 7.207L10.686 12l-4.793 4.793l1.414 1.414z");
+    transform: translate(-1px, -2px) scale(1.1);
+}
+
+/* Arrow Small (2)*/
+path[d="M14.7 5.3a1 1 0 0 1 0 1.4L9.42 12l5.3 5.3a1 1 0 0 1-1.42 1.4l-6-6a1 1 0 0 1 0-1.4l6-6a1 1 0 0 1 1.42 0Z"] {
+      d: path("m4.836 12l6.207 6.207l1.414-1.414L7.664 12l4.793-4.793l-1.414-1.414zm5.65 0l6.207 6.207l1.414-1.414L13.314 12l4.793-4.793l-1.414-1.414z");
+    transform: translate(-1px, -2px) scale(1.1);
+}
+
+/* Vencord Toolbox*/
+path[d="M0 0h7v1H6v1H5v1H4v1H3v1H2v1h5v1H0V6h1V5h1V4h1V3h1V2h1V1H0m13 2h5v1h-1v1h-1v1h-1v1h3v1h-5V7h1V6h1V5h1V4h-3m8 5h1v5h1v-1h1v1h-1v1h1v-1h1v1h-1v3h-1v1h-2v1h-1v1h1v-1h2v-1h1v2h-1v1h-2v1h-1v-1h-1v1h-6v-1h-1v-1h-1v-2h1v1h2v1h3v1h1v-1h-1v-1h-3v-1h-4v-4h1v-2h1v-1h1v-1h1v2h1v1h1v-1h1v1h-1v1h2v-2h1v-2h1v-1h1M8 14h2v1H9v4h1v2h1v1h1v1h1v1h4v1h-6v-1H5v-1H4v-5h1v-1h1v-2h2m17 3h1v3h-1v1h-1v1h-1v2h-2v-2h2v-1h1v-1h1m1 0h1v3h-1v1h-2v-1h1v-1h1"] {
+    d: path("M3 17v-2h5v-2H3v-2h5V9H3V7h5q.825 0 1.413.588T10 9v1.5q0 .625-.437 1.063T8.5 12q.625 0 1.063.438T10 13.5V15q0 .825-.587 1.413T8 17zm18-6v4q0 .825-.587 1.413T19 17h-5q-.825 0-1.412-.587T12 15V9q0-.825.588-1.412T14 7h5q.825 0 1.413.588T21 9h-7v6h5v-2h-2.5v-2z");
+    transform: translate(-5px, -6px) scale(1.6);
+}
+/* Vencord Toolbox*/
+path[d="M9 0h1v1h1v2h1v2h3V3h1V1h1V0h1v2h1v2h1v7h-1v-1h-3V9h1V6h-1v4h-3v1h1v-1h2v1h3v1h-1v1h-3v2h1v1h1v1h1v3h-1v4h-2v-1h-1v-4h-1v4h-1v1h-2v-4H9v-3h1v-1h1v-1h1v-2H9v-1H8v-1h3V6h-1v3h1v1H8v1H7V4h1V2h1M5 19h2v1h1v1h1v3H4v-1h2v-1H4v-2h1m15-1h2v1h1v2h-2v1h2v1h-5v-3h1v-1h1m4 3h4v1h-4"] {
+    d: path("M3 17v-2h5v-2H3v-2h5V9H3V7h5q.825 0 1.413.588T10 9v1.5q0 .625-.437 1.063T8.5 12q.625 0 1.063.438T10 13.5V15q0 .825-.587 1.413T8 17zm18-6v4q0 .825-.587 1.413T19 17h-5q-.825 0-1.412-.587T12 15V9q0-.825.588-1.412T14 7h5q.825 0 1.413.588T21 9h-7v6h5v-2h-2.5v-2z");
+    transform: translate(-5px, -6px) scale(1.6);
+}
