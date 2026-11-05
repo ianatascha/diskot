@@ -35,10 +35,10 @@
 
 
 .winButtonClose_c38106::before {
-    content: "🗙" !important;
+    content: "⬤" !important;
     color: #f38ba8 !important; /* Red color */
-    top: 50% !important;
-    font-size: 13px !important;
+    top: 48% !important;
+    font-size: 15px !important;
     left: 50% !important;
     font-weight: normal !important; /* Fixed weight */
     text-shadow: 0 0 3px #f38ba8 !important; /* Light outline for stability */
@@ -60,10 +60,10 @@
 }
 
 .winButtonMinMax_c38106:nth-child(1)::before {
-    content: "—" !important;
+    content: "⬤" !important;
     color: #f9e2af !important; /* Yellow color */
-    top: 55% !important;
-    font-size: 12px !important;
+    top: 50% !important;
+    font-size: 14px !important;
     left: 50% !important;
     -webkit-text-stroke: 0.5px #f9e2af !important; /* Fix outline */
     text-rendering: geometricPrecision !important;
@@ -85,7 +85,7 @@
 }
 
 .winButtonMinMax_c38106:nth-child(2)::before {
-    content: "◻" !important;
+    content: "⬤" !important;
     color: #a6e3a1 !important; /* Green color */
     top: 50% !important;
     font-size: 14px !important;
