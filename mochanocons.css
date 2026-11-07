@@ -1,6 +1,6 @@
 /* Window Control Fancy Button By Moonself + squeezbtw */
 /* new windows button & hover */
-.winButton_c38106 {
+.winButton_3zSH5d {
     position: relative !important;
     background-color: transparent !important;
     margin: 0 !important;
@@ -9,18 +9,18 @@
     justify-content: center !important;
 }
 
-.winButtons_c38106 {
+.winButtons_3zSH5d {
     gap: 0 !important;
     display: flex !important;
     align-items: center !important;
 }
 
-.winButton_c38106 svg {
+.winButton_3zSH5d svg {
     opacity: 0 !important;
     display: none !important;
 }
 
-.winButton_c38106::before {
+.winButton_3zSH5d::before {
     content: "" !important;
     display: flex !important;
     align-items: center !important;
@@ -34,7 +34,7 @@
 }
 
 
-.winButtonClose_c38106::before {
+.winButtonClose_3zSH5d::before {
     content: "🗙" !important;
     color: #f38ba8 !important; /* Red color */
     top: 50% !important;
@@ -46,7 +46,7 @@
     transform: translate(-50%, -50%) !important;
 }
 
-.winButtonClose_c38106:hover::before {
+.winButtonClose_3zSH5d:hover::before {
     color: #d20f39 !important; /* Brighter red on hover */
     text-shadow: 
     0 0 5px #ff3b44cc,
@@ -59,7 +59,7 @@
     transform: translate(-50%, -50%) rotate(180deg) !important; /* Rotation animation */
 }
 
-.winButtonMinMax_c38106:nth-child(1)::before {
+.winButtonMinMax_3zSH5d:nth-child(1)::before {
     content: "—" !important;
     color: #f9e2af !important; /* Yellow color */
     top: 55% !important;
@@ -71,7 +71,7 @@
     text-shadow: 0 0 3px #f9e2af !important; /* Light outline for stability */
 }
 
-.winButtonMinMax_c38106:nth-child(1):hover::before {
+.winButtonMinMax_3zSH5d:nth-child(1):hover::before {
     color: #df8e1d !important;
     text-shadow: 
         0 0 5px #faa61a,
@@ -84,7 +84,7 @@
     transform: translate(-50%, -50%) rotate(180deg) !important;
 }
 
-.winButtonMinMax_c38106:nth-child(2)::before {
+.winButtonMinMax_3zSH5d:nth-child(2)::before {
     content: "◻" !important;
     color: #a6e3a1 !important; /* Green color */
     top: 50% !important;
@@ -96,7 +96,7 @@
     text-shadow: 0 0 3px #a6e3a1 !important; /* Light outline for stability */
 }
 
-.winButtonMinMax_c38106:nth-child(2):hover::before {
+.winButtonMinMax_3zSH5d:nth-child(2):hover::before {
     color: #40a02b !important;
     text-shadow: 
         0 0 5px #2ecc71cc,
@@ -110,11 +110,11 @@
 }
 
 @container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
-    .visual-refresh .winButton_c38106 {
+    .visual-refresh .winButton_3zSH5d {
         border-radius: 0 !important;
     }
     
-    .visual-refresh .winButtons_c38106 {
+    .visual-refresh .winButtons_3zSH5d {
         gap: 0 !important;
     }
 }
@@ -147,8 +147,8 @@
 
 
 /* Friends Icon */
-[href="/channels/@me"] .layout__20a53 {
-  .avatar__20a53 {
+[href="/channels/@me"] .layout_TBNqol {
+  .avatar_TBNqol {
     display: none;
   }
   &:before {
@@ -161,8 +161,8 @@
 }
 
 /* nitro */
-[href="/store"] .layout__20a53 {
-  .avatar__20a53 {
+[href="/store"] .layout_TBNqol {
+  .avatar_TBNqol {
     display: none;
   }
   &:before {
@@ -175,8 +175,8 @@
 }
 
 /* Shop */
-[href="/shop"] .layout__20a53 {
-  .avatar__20a53 {
+[href="/shop"] .layout_TBNqol {
+  .avatar_TBNqol {
     display: none;
   }
   &:before {
@@ -189,8 +189,8 @@
 }
 
 /* message */
-[href="/message-requests"] .layout__20a53 {
-  .avatar__20a53 {
+[href="/message-requests"] .layout_TBNqol {
+  .avatar_TBNqol {
     display: none;
   }
   &:before {
@@ -203,8 +203,8 @@
 }
 
 /* quest */
-[href="/quest-home"] .layout__20a53 {
-  .avatar__20a53 {
+[href="/quest-home"] .layout_TBNqol {
+  .avatar_TBNqol {
     display: none;
   }
   &:before {
@@ -223,7 +223,7 @@
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23a6da95' stroke-linecap='round' stroke-linejoin='round' d='M4.389 10.167h7.222v2.889a1.444 1.444 0 0 1-1.444 1.444H5.833a1.444 1.444 0 0 1-1.444-1.444ZM8 5.833A4.333 4.333 0 0 0 3.667 1.5H1.5v1.444a4.333 4.333 0 0 0 4.333 4.334H8m0 0a4.333 4.333 0 0 1 4.333-4.334H14.5v.723A4.333 4.333 0 0 1 10.167 8H8m0 2.167V5.833'/%3E%3C/svg%3E");
   transform: translate(-100%, -110%);
 }
-.iconContainer_c00127 {
+.iconContainer_EkmWN_ {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23a6da95' stroke-linecap='round' stroke-linejoin='round' d='M4.389 10.167h7.222v2.889a1.444 1.444 0 0 1-1.444 1.444H5.833a1.444 1.444 0 0 1-1.444-1.444ZM8 5.833A4.333 4.333 0 0 0 3.667 1.5H1.5v1.444a4.333 4.333 0 0 0 4.333 4.334H8m0 0a4.333 4.333 0 0 1 4.333-4.334H14.5v.723A4.333 4.333 0 0 1 10.167 8H8m0 2.167V5.833'/%3E%3C/svg%3E");
   display: inline-block;
 }
