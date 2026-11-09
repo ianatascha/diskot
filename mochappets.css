@@ -344,10 +344,10 @@ ul[class^=content_] > li[class^=container_] > ul[role=group] {
 #vc-spotify-player {
     --blur-amount: 4px; 
     --normal-bg-colour: var(--bg-overlay-floating, var(--background-base-low, var(--background-secondary-alt)));
-
     position: relative;
     background: linear-gradient(to bottom, transparent 0%, var(--normal-bg-colour) 100%) !important;
     overflow: hidden;
+    border-radius: 8px !important;
     transition: all 0.4s ease-out;
     > * {
       filter: drop-shadow(0 0 10px var(--normal-bg-colour));
